@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Marco Argueta">
+	<meta name="description" content="Cálculo de cuotas a pagar por préstamo">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<link rel="shortcut icon" href="imagenes/prestamo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/prestamo.css">
+	<script type="text/javascript" src="js/prestamo.js"></script>
+	<title>Ejercicio 3 - Préstamos</title>
+</head>
+<body>
+<center>
+	<table border=1 cellspacing=0 >
+		<tr>
+			<th colspan="2" style="background-color: #bdd6ee;">CUOTA MENSUAL</th>
+		</tr>
+		<tr align="center">
+			<td>PRÉSTAMO ADQUIRIDO</td>
+			<td>$<input type="number" name="prestamo" id="prestamo"></td>
+		</tr>
+		<tr align="center">
+			<td>TASA DE INTERÉS</td>
+			<td><input type="number" name="interes" id="interes">%</td>
+		</tr>
+		<tr align="center">
+			<td>NÚMERO DE MESES</td>
+			<td><input type="number" name="meses" id="meses"></td>
+		</tr>
+		<tr style="background-color: #2e74b5;">
+			<td align="center">CUOTA MENSUAL</td>
+			<td id="cuotamensual">$</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><button onclick="calcularCuota()">CALCULAR</button></td>
+		</tr>
+		
+	</table>
+</center>
+</body>
+</html>
